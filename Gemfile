@@ -42,6 +42,11 @@ gem 'faker'
 # Use slim instead of erb
 gem 'slim'
 
+#group :performance do
+  gem 'ruby-prof'
+  gem 'rails-perftest'
+#end
+
 group :development do
   gem 'bullet'
   gem 'better_errors'
