@@ -43,8 +43,6 @@ gem 'faker'
 gem 'slim'
 
 #group :performance do
-  gem 'ruby-prof'
-  gem 'rails-perftest'
 #end
 
 group :development do
@@ -58,7 +56,7 @@ group :development do
   gem 'spring'
 end
 
-group :development, :test do
+group :development, :test, :performance do
   gem 'capybara'
   gem "codeclimate-test-reporter", require: false
   gem 'factory_girl_rails'
@@ -66,4 +64,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'simplecov', require: false
+  gem 'ruby-prof'
+  gem 'rails-perftest'
 end
