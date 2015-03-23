@@ -1,22 +1,12 @@
 require 'test_helper'
-#require File.dirname(__FILE__) + '/../test_helper'
 require 'rails/performance_test_help'
 
-class ExampleTest < ActionDispatch::PerformanceTest
+class UsercontrollerTest < ActionDispatch::PerformanceTest
   # Refer to the documentation for all available options
   # self.profile_options = { runs: 5, metrics: [:wall_time, :memory],
   #                          output: 'tmp/performance', formats: [:flat] }
 
-  test "user came to home page" do
+  test "homepage" do
     get '/'
   end
-
-  test "user clicked login"
-  	get '/login'
-  end
-
-  test "creating new post" do
-    post '/posts', post: { body: 'lifo is fooling you' }
-  end
-
 end
