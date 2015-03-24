@@ -15,16 +15,16 @@ class LoadTestTest < ActionDispatch::PerformanceTest
     	end
     end
 
-    test "Generate 100 Users" do
-      for i in 0..100
+    test "Generate 20 Users" do
+      for i in 0..20
         post '/users/new', params: { slug: Faker::Internet.user_name, name:Faker::Name.name, 
           email:Faker::Internet.email, password:'password1', password_confirmation:'password1', 
           commit:'Sign up' }
       end
     end
 
-    test "Generate 1000 Users" do
-      for i in 0..1000
+    test "Generate 30 Users" do
+      for i in 0..30
         post '/users/new', params: { slug: Faker::Internet.user_name, name:Faker::Name.name, 
           email:Faker::Internet.email, password:'password1', password_confirmation:'password1', 
           commit:'Sign up' }

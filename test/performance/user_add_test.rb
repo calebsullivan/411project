@@ -9,4 +9,9 @@ class UserAddTest < ActionDispatch::PerformanceTest
   test "homepage" do
     get '/'
   end
+
+  test "click login" do
+  	get '/login'
+  end
+  
 end
