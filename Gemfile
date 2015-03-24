@@ -67,3 +67,7 @@ group :development, :test, :performance do
   gem 'ruby-prof'
   gem 'rails-perftest'
 end
+
+group :test do
+  gem 'memory_test_fix'
+end

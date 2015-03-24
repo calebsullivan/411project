@@ -11,12 +11,8 @@ class ExampleTest < ActionDispatch::PerformanceTest
     get '/'
   end
 
-  test "user clicked login"
+  test "user clicked login" do
   	get '/login'
-  end
-
-  test "creating new post" do
-    post '/posts', post: { body: 'lifo is fooling you' }
   end
 
 end
