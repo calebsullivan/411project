@@ -1,3 +1,26 @@
+GIT
+  remote: https://github.com/aleksandarmilicevic/method_source.git
+  revision: c3e49bd036fe8f885e358dc03d687b52a2291b8e
+  specs:
+    method_source (0.8.3.1)
+
+GIT
+  remote: https://github.com/jnear/derailer.git
+  revision: e90198dff1ffcf97b641eb60cfbdba58373bb2ae
+  specs:
+    derailer (0.0.1)
+      rspec-rails
+      sdg_utils
+
+GIT
+  remote: https://github.com/jnear/sdg_utils.git
+  revision: 15e7023311ddee3f7f127d5bbb4bb87a43ec782c
+  specs:
+    sdg_utils (0.0.1)
+      method_source (~> 0.8.3)
+      nilio
+      parser (~> 2.0.0.pre7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,6 +60,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    ast (1.1.0)
     autoprefixer-rails (5.1.7)
       execjs
       json
@@ -127,17 +151,20 @@ GEM
     memory_test_fix (1.2.2)
       activerecord (>= 3.2.0, < 4.99.0)
       railties (>= 3.2.0, < 4.99.0)
-    method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
     nenv (0.2.0)
+    nilio (1.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     notiffany (0.0.6)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    parser (2.0.0)
+      ast (~> 1.1)
+      slop (~> 3.4, >= 3.4.5)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -264,6 +291,7 @@ DEPENDENCIES
   capybara
   codeclimate-test-reporter
   coffee-rails
+  derailer!
   factory_girl_rails
   faker
   font-awesome-sass (~> 4.3)
@@ -271,6 +299,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   memory_test_fix
+  method_source (~> 0.8.3)!
   pry
   quiet_assets
   rails (= 4.2.0)
@@ -279,6 +308,7 @@ DEPENDENCIES
   rspec-rails
   ruby-prof
   sass-rails (~> 5.0.0)
+  sdg_utils!
   sdoc (~> 0.4.0)
   simplecov
   slim

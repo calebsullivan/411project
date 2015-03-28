@@ -30,5 +30,4 @@ class LoadTestTest < ActionDispatch::PerformanceTest
           commit:'Sign up' }
       end
     end
-
   end
