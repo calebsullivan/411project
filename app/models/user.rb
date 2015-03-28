@@ -50,8 +50,11 @@ class User < ActiveRecord::Base
     SecureRandom.urlsafe_base64
   end
 
-  def self.hash(token)
-    Digest::SHA1.hexdigest(token.to_s)
+  #digest breaks dev 
+
+  def self.hash(token=nil)
+    #Digest::SHA1.hexdigest(token.to_s)
+    token.to_i
   end
 
   private

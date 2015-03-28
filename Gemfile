@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#must use ruby version 2.0.0, higher not supported by Derailer on Rails 4
+ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
@@ -43,7 +45,7 @@ gem 'faker'
 gem 'slim'
 
 #Derailer security analsys
-gem 'derailer', :git => 'https://github.com/jnear/derailer.git', :branch => 'devel'
+gem 'derailer', :git => 'https://github.com/jnear/derailer.git'
 gem 'method_source', "~>0.8.3",
   :git => 'https://github.com/aleksandarmilicevic/method_source.git'
 gem 'sdg_utils', :git => 'https://github.com/jnear/sdg_utils.git'

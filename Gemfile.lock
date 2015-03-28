@@ -6,8 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/jnear/derailer.git
-  revision: 74dc91117d98ce84a8c4c117857478e84f4a1338
-  branch: devel
+  revision: e90198dff1ffcf97b641eb60cfbdba58373bb2ae
   specs:
     derailer (0.0.1)
       rspec-rails
